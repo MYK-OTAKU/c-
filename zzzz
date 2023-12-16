@@ -1,2 +1,107 @@
 TEST LOREM IPSUM 
-GHHHHHHHHHHHHHHHHH                                      NGH NHGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+GHHHHHHHHHHHHHHHHH                  NGH NHGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG if (table.SelectedRows.Count > 0)
+            {
+                // Récupérez l'ID de la ligne sélectionnée (assurez-vous d'avoir une colonne d'ID dans votre DataGridView)
+                int selectedRowIndex = table.SelectedRows[0].Index;
+                int selectedClientId = Convert.ToInt32(table["id", selectedRowIndex].Value);
+
+                // Supprimez la ligne de la base de données
+
+                string deleteQuery = "DELETE FROM Produits WHERE id = @id";
+                using (SqlCommand cmd = new SqlCommand(deleteQuery, connection))
+                {
+                    cmd.Parameters.AddWithValue("@id", selectedClientId);
+                    cmd.ExecuteNonQuery();
+                }
+
+
+                // Supprimez la ligne du DataTable lié au DataGridView
+                DataTable.Rows.RemoveAt(selectedRowIndex);
+                ChargerDonnees();
+                // Réinitialisez les TextBox
+
+            } if (table.SelectedRows.Count > 0)
+            {
+                // Récupérez l'ID de la ligne sélectionnée (assurez-vous d'avoir une colonne d'ID dans votre DataGridView)
+                int selectedRowIndex = table.SelectedRows[0].Index;
+                int selectedClientId = Convert.ToInt32(table["id", selectedRowIndex].Value);
+
+                // Supprimez la ligne de la base de données
+
+                string deleteQuery = "DELETE FROM Produits WHERE id = @id";
+                using (SqlCommand cmd = new SqlCommand(deleteQuery, connection))
+                {
+                    cmd.Parameters.AddWithValue("@id", selectedClientId);
+                    cmd.ExecuteNonQuery();
+                }
+
+
+                // Supprimez la ligne du DataTable lié au DataGridView
+                DataTable.Rows.RemoveAt(selectedRowIndex);
+                ChargerDonnees();
+                // Réinitialisez les TextBox
+
+            } if (table.SelectedRows.Count > 0)
+            {
+                // Récupérez l'ID de la ligne sélectionnée (assurez-vous d'avoir une colonne d'ID dans votre DataGridView)
+                int selectedRowIndex = table.SelectedRows[0].Index;
+                int selectedClientId = Convert.ToInt32(table["id", selectedRowIndex].Value);
+
+                // Supprimez la ligne de la base de données
+
+                string deleteQuery = "DELETE FROM Produits WHERE id = @id";
+                using (SqlCommand cmd = new SqlCommand(deleteQuery, connection))
+                {
+                    cmd.Parameters.AddWithValue("@id", selectedClientId);
+                    cmd.ExecuteNonQuery();
+                }
+
+
+                // Supprimez la ligne du DataTable lié au DataGridView
+                DataTable.Rows.RemoveAt(selectedRowIndex);
+                ChargerDonnees();
+                // Réinitialisez les TextBox
+
+            } if (table.SelectedRows.Count > 0)
+            {
+                // Récupérez l'ID de la ligne sélectionnée (assurez-vous d'avoir une colonne d'ID dans votre DataGridView)
+                int selectedRowIndex = table.SelectedRows[0].Index;
+                int selectedClientId = Convert.ToInt32(table["id", selectedRowIndex].Value);
+
+                // Supprimez la ligne de la base de données
+
+                string deleteQuery = "DELETE FROM Produits WHERE id = @id";
+                using (SqlCommand cmd = new SqlCommand(deleteQuery, connection))
+                {
+                    cmd.Parameters.AddWithValue("@id", selectedClientId);
+                    cmd.ExecuteNonQuery();
+                }
+
+
+                // Supprimez la ligne du DataTable lié au DataGridView
+                DataTable.Rows.RemoveAt(selectedRowIndex);
+                ChargerDonnees();
+                // Réinitialisez les TextBox
+
+            } if (table.SelectedRows.Count > 0)
+            {
+                // Récupérez l'ID de la ligne sélectionnée (assurez-vous d'avoir une colonne d'ID dans votre DataGridView)
+                int selectedRowIndex = table.SelectedRows[0].Index;
+                int selectedClientId = Convert.ToInt32(table["id", selectedRowIndex].Value);
+
+                // Supprimez la ligne de la base de données
+
+                string deleteQuery = "DELETE FROM Produits WHERE id = @id";
+                using (SqlCommand cmd = new SqlCommand(deleteQuery, connection))
+                {
+                    cmd.Parameters.AddWithValue("@id", selectedClientId);
+                    cmd.ExecuteNonQuery();
+                }
+
+
+                // Supprimez la ligne du DataTable lié au DataGridView
+                DataTable.Rows.RemoveAt(selectedRowIndex);
+                ChargerDonnees();
+                // Réinitialisez les TextBox
+
+            }
